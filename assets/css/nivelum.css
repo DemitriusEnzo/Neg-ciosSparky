@@ -1,0 +1,170 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #002B36;
+}
+
+.navbar-brand {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #002B36;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.hero {
+    background: linear-gradient(to right, #004d99, #66ccff);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.info-section {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h4 {
+    margin-bottom: 20px;
+    color: #004d99;
+}
+
+.info-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.info-section ul {
+    margin-bottom: 20px;
+}
+
+.feature-box,
+.app-box,
+.scalable-box,
+.connectivity-box {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover,
+.app-box:hover,
+.scalable-box:hover,
+.connectivity-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box i,
+.app-box i,
+.scalable-box i,
+.connectivity-box i {
+    transition: color 0.3s ease;
+}
+
+.feature-box:hover i {
+    color: #004d99;
+}
+
+.app-box:hover i {
+    color: #d9534f;
+}
+
+.scalable-box:hover i,
+.connectivity-box:hover i {
+    color: #28a745;
+}
+
+.table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.interactivity {
+    background: #004d99;
+    color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.interactivity i {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.interactivity:hover {
+    background: #003366;
+    cursor: pointer;
+}
+
+.cta {
+    background: #004d99;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.cta h3 {
+    margin-bottom: 15px;
+}
+
+.cta a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta a:hover {
+    background: #003366;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.interactive-cards .card,
+.feedback-cards .card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.interactive-cards .card:hover,
+.feedback-cards .card:hover {
+    transform: scale(1.05);
+}

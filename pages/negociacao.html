@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Iniciar Negociação - Sparky</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/negociacao.css">
+</head>
+
+<body>
+
+    <div class="access-box">
+        <h2>Iniciar Negociação</h2>
+        <p>Insira a senha de acesso fornecida por nossa equipe para prosseguir com a negociação.</p>
+        <form id="access-form">
+            <div class="input-group mb-3">
+                <input type="password" id="password" class="form-control" placeholder="Digite sua senha" required>
+                <span class="input-group-text" id="togglePassword">
+                    <i class="fas fa-eye eye-icon"></i>
+                </span>
+            </div>
+            <small class="tooltip-password">Clique no ícone para mostrar ou ocultar a senha</small>
+            <button type="submit" class="btn btn-custom">Acessar</button>
+            <div id="error-message" class="error-message">Senha incorreta. Tente novamente.</div>
+            <div id="success-message" class="success-message">Senha correta! Redirecionando...</div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="../assets/js/negociacao.js"></script>
+</body>
+
+</html>

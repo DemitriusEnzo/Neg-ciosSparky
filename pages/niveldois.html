@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início da Negociação</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/niveldois.css">
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="section-title"><strong>Início da Negociação</strong></h1>
+            <p>Voltado para investidores em potencial que estão começando a negociação e precisam de informações mais
+                detalhadas com garantia de confidencialidade.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="info-section">
+            <h4>Termo de Confidencialidade</h4>
+            <p>Para acessar documentos detalhados, discussões estratégicas e análises financeiras, é necessário assinar
+                o Termo de Confidencialidade abaixo.</p>
+            <div class="modal fade" id="modalConfidencialidade" tabindex="-1" aria-labelledby="modalConfidencialidadeLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalConfidencialidadeLabel">Termo de Confidencialidade</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Este Termo de Confidencialidade ("Termo") é celebrado entre o assinante abaixo
+                                    identificado ("Você" ou "Assinante") e a empresa responsável pelo robô Sparky. Ao
+                                    assinar este Termo, você concorda em manter a confidencialidade das
+                                    informações fornecidas e a seguir as condições estabelecidas abaixo.</strong></p>
+                            <p><strong>1. Informações Confidenciais:</strong> Para os fins deste Termo, "Informações
+                                Confidenciais" incluem todas as informações, documentos e dados fornecidos por Sparky,
+                                incluindo, mas não se limitando a, relatórios técnicos, financeiros, projeções,
+                                discussões estratégicas e qualquer outra informação que não seja publicamente conhecida.
+                            </p>
+                            <p><strong>2. Obrigação de Confidencialidade:</strong> O Assinante concorda em manter as
+                                Informações Confidenciais em sigilo absoluto e a não divulgar, reproduzir ou utilizar
+                                tais informações para qualquer fim além do propósito para o qual foram fornecidas, sem o
+                                consentimento expresso e por escrito de Sparky.</p>
+                            <p><strong>3. Exclusão de Informações:</strong> Informações que eram de domínio público
+                                antes da divulgação ou que se tornarem públicas sem violação deste Termo não serão
+                                consideradas Informações Confidenciais.</p>
+                            <p><strong>4. Retorno ou Destruição das Informações:</strong> Ao término do uso das
+                                Informações Confidenciais ou a qualquer momento a pedido da Empresa, o Assinante deve
+                                devolver ou destruir todas as cópias dessas informações e fornecer uma confirmação por
+                                escrito de que todas as cópias foram destruídas.</p>
+                            <p><strong>5. Violação e Recursos:</strong> O Assinante reconhece que a violação deste Termo
+                                pode causar danos irreparáveis à Sparky, e Sparky terá direito a buscar todos os
+                                recursos legais disponíveis para remediar tal violação.</p>
+                            <p><strong>6. Vigência:</strong> Este Termo entra em vigor na data de assinatura e
+                                permanecerá em vigor enquanto o Assinante tiver acesso às Informações Confidenciais.</p>
+                            <p><strong>7. Lei Aplicável:</strong> Este Termo será regido pelas leis do [país ou estado],
+                                e quaisquer disputas serão resolvidas nos tribunais competentes dessa jurisdição.</p>
+                            <form id="formularioConfidencialidade">
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="nome" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="assinatura" class="form-label">Assinatura</label>
+                                    <input type="text" class="form-control" id="assinatura" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="data" class="form-label">Data</label>
+                                    <input type="date" class="form-control" id="data" required>
+                                </div>
+                                <button type="button" class="btn btn-primary"
+                                    onclick="enviarFormularioConfidencialidade()">Assinar e Acessar Conteúdo</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalConfidencialidade">Visualizar
+                Termo de Confidencialidade</button>
+            <div id="mensagemAcesso" class="mt-3 hidden" style="display: none;">
+                <p class="alert alert-success">Ótimo! Você agora tem acesso às informações detalhadas. Dê uma olhada abaixo!</p>
+            </div>
+        </div>        
+        <div class="info-section hidden" id="relatoriosDetalhados">
+            <h4>Relatórios Detalhados</h4>
+            <p>Para obter informações técnicas e financeiras aprofundadas sobre o robô Sparky, revise os relatórios
+                detalhados abaixo:</p>
+            <div class="table-container">
+                <h5>Relatório Técnico do Robô Sparky</h5>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Aspecto</th>
+                                <th>Detalhe</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Modelo</td>
+                                <td>Sparky</td>
+                            </tr>
+                            <tr>
+                                <td>Tipo</td>
+                                <td>Robô Tipo Rover</td>
+                            </tr>
+                            <tr>
+                                <td>Controlador</td>
+                                <td>Arduino</td>
+                            </tr>
+                            <tr>
+                                <td>Controle</td>
+                                <td>Bluetooth</td>
+                            </tr>
+                            <tr>
+                                <td>Sensores</td>
+                                <td>Botões ativados por contato.</td>
+                            </tr>
+                            <tr>
+                                <td>Testes Realizados</td>
+                                <td>Ambientes Controlados e Reais</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="table-container">
+                <h5>Relatório Financeiro</h5>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Custo dos Materiais</td>
+                                <td>$1,000</td>
+                            </tr>
+                            <tr>
+                                <td>Custos de Montagem</td>
+                                <td>$500</td>
+                            </tr>
+                            <tr>
+                                <td>Custos de Desenvolvimento</td>
+                                <td>$1,500</td>
+                            </tr>
+                            <tr>
+                                <td>Custo Total</td>
+                                <td>$3,000</td>
+                            </tr>
+                            <tr>
+                                <td>Venda Unitária</td>
+                                <td>$5,000</td>
+                            </tr>
+                            <tr>
+                                <td>Margem de Lucro</td>
+                                <td>40%</td>
+                            </tr>
+                            <tr>
+                                <td>Meta de Vendas Anual</td>
+                                <td>200 unidades</td>
+                            </tr>
+                            <tr>
+                                <td>Receita Anual Projetada</td>
+                                <td>$1,000,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="info-section hidden" id="discussoesEstrategicas">
+            <h4>Discussões Estratégicas</h4>
+            <p>Participe de reuniões e discussões sobre possíveis parcerias e estratégias de investimento.</p>
+            <ul>
+                <li><strong>Reuniões de Alinhamento:</strong> Agende uma reunião para discutir os detalhes do
+                    investimento e alinhar expectativas.</li>
+                <li><strong>Discussões de Estratégia:</strong> Explore estratégias de crescimento e possíveis parcerias
+                    para expansão e desenvolvimento.</li>
+            </ul>
+            <p>Entre em contato conosco!</p>
+        </div>
+        <div class="info-section hidden" id="analisesFinanceiras">
+            <h4>Análises Financeiras</h4>
+            <p>Confira as projeções financeiras e a análise do retorno sobre o investimento do robô Sparky.</p>
+            <div class="table-container">
+                <h5>Projeções Financeiras</h5>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Ano</th>
+                                <th>Investimento Inicial</th>
+                                <th>Receita Projetada</th>
+                                <th>Lucro Líquido</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ano 1</td>
+                                <td>$500,000</td>
+                                <td>$700,000</td>
+                                <td>$200,000</td>
+                            </tr>
+                            <tr>
+                                <td>Ano 2</td>
+                                <td>-</td>
+                                <td>$1,000,000</td>
+                                <td>$300,000</td>
+                            </tr>
+                            <tr>
+                                <td>Ano 3</td>
+                                <td>-</td>
+                                <td>$1,500,000</td>
+                                <td>$500,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="table-container">
+                <h5>Análise de Risco</h5>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tipo de Risco</th>
+                                <th>Descrição</th>
+                                <th>Probabilidade</th>
+                                <th>Impacto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Risco Tecnológico</td>
+                                <td>Baixo, devido à tecnologia comprovada do Arduino e Bluetooth.</td>
+                                <td>Baixo</td>
+                                <td>Baixo</td>
+                            </tr>
+                            <tr>
+                                <td>Risco de Mercado</td>
+                                <td>Moderado, baseado na aceitação do mercado e concorrência.</td>
+                                <td>Moderado</td>
+                                <td>Moderado</td>
+                            </tr>
+                            <tr>
+                                <td>Risco Financeiro</td>
+                                <td>Baixo, com base nas projeções financeiras e custo-benefício positivo.</td>
+                                <td>Baixo</td>
+                                <td>Baixo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="cta hidden" id="botaoCta">
+            <h3>Interessado em Iniciar a Negociação?</h3>
+            <p>Entre em contato para iniciar as discussões sobre a parceria.
+            </p>
+            <a href="niveltres.html">Iniciar Negociação</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/niveldois.js"></script>
+</body>
+
+</html>

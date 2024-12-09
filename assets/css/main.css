@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #002B36;
+}
+
+.navbar-brand {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+}
+
+.hero {
+    background: linear-gradient(to right, #004d99, #66ccff);
+    color: #FFFFFF;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #002B36;
+}
+
+.differentials,
+.development,
+.chats,
+.partners {
+    padding: 50px 20px;
+}
+
+.differentials {
+    background: linear-gradient(to right, #f2f2f2, #e6e6e6);
+}
+
+.development {
+    background: #ffffff;
+}
+
+.chats {
+    background: linear-gradient(to right, #e6e6e6, #f9f9f9);
+}
+
+.partners {
+    background: #f2f2f2;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    border: none;
+    background: #ffffff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: #002B36;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #002B36;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.custom-btn {
+    padding: 15px 30px;
+
+    font-size: 1.25rem;
+}
+
+.team-photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.team-member {
+    width: 100%;
+    max-width: 200px;
+}
